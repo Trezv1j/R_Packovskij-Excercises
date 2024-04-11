@@ -1,17 +1,26 @@
-let begikai = [22, 20, 25,25];
-let answer = 0;
-let pirmas = begikai[0];
+let runnerTimes = [22, 20, 25, 25];
 
-for(let i = 1; i < begikai.length; i++){
-    if(begikai[i] < pirmas){
-        pirmas = begikai[i];
+// Variable to store the fastest time
+let fastestTime = runnerTimes[0]; // Assume the first runner's time is the fastest
+
+// Finding the fastest time among all runners
+for (let i = 1; i < runnerTimes.length; i++) {
+    if (runnerTimes[i] < fastestTime) {
+        fastestTime = runnerTimes[i]; // Update the fastest time if a faster time is found
     }
 }
 
-for (let i = 0; i < begikai.length; i++){
-    answer += begikai[i];
+// Calculating the sum of all running times
+let sum = 0;
+for (let i = 0; i < runnerTimes.length; i++) {
+    sum += runnerTimes[i]; // Adding each running time to the sum
 }
-let vidurkis = answer / begikai.length;
-let skirtumas = vidurkis - pirmas;
 
-console.log(`Greičiausio bėgiko laikas: ${pirmas}sek.. Jis buvo: ${skirtumas} sek geresnis už vidurkį.`);
+// Calculating the average running time
+let averageTime = sum / runnerTimes.length;
+
+// Calculating the difference between the fastest time and the average time
+let difference = averageTime - fastestTime;
+
+// Displaying the results
+console.log(`Greičiausio bėgiko laikas: ${fastestTime}sek.. Jis buvo: ${difference} sek geresnis už vidurkį.`);

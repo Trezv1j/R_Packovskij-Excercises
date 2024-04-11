@@ -1,16 +1,12 @@
-//Yra duoti tris skaičiai a, b, c. Parašykite programą, kuri rastų dviejų didžiausių skaičių
-//sumą
-
-let a = 5;
+let a = 12;
 let b = 5;
-let c = 3;
+let c = 1;
 
-if(a <= b && a <= c){
-    console.log(b + c);
-}
-else if(b <= a && b <= c){
-    console.log(a + c);
-}
-else{
-    console.log(a + b);
+// Checking which two numbers are the smallest and adding them together
+if (a <= b && a <= c) {
+    console.log(b + c); // If a is the smallest, add b and c
+} else if (b <= a && b <= c) {
+    console.log(a + c); // If b is the smallest, add a and c
+} else {
+    console.log(a + b); // If c is the smallest or all are equal, add a and b
 }

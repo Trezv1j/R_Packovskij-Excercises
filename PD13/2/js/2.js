@@ -3,8 +3,9 @@ let y = 10;
 let z = -12;
 
 if(x*y*z<0){
-    console.log(`neigiamas`)
+    console.log(`Sandaugos ženklas yra '-'.`)
 }
+
 else{
-    console.log(`teigiamas`)
+    console.log(`Sandaugos ženklas yra '+'.`)
 }

@@ -1,9 +1,8 @@
-const a = 85;
-const b = 4;
+const a = 5312;
+const b = 2;
 
-if (a % b === 0){
-    console.log(`daliklis`);
-}
-else{
-    console.log(`ne daliklis`);
+if (a % b === 0) {
+    console.log(`The number ${a} is divisible by ${b}`);
+} else {
+    console.log(`The number ${a} is not divisible by ${b}`);
 }

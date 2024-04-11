@@ -1,11 +1,12 @@
-let sanaudos = 11;
-let dienos = 0;
+let day = 0; // Initialize the variable to count days
 
-for(let kuras = 112; kuras > 0; kuras -=22){
-    if (dienos % 2 !==0){
-        kuras -=11;
-        dienos++;
+for (let fuel = 112; fuel > 0; fuel -= 22) {
+    if (day % 2 !== 0) { // Check if it's an odd day
+        fuel -= 11; // Reduce fuel due to extra consumption on odd days
+        day++; // Increment the day counter
     }
-    dienos++;
+    day++; // Increment the day counter for every loop iteration
 }
-console.log(`Keliauti bus galima ${dienos} dienas`);
+
+
+console.log(`Keliauti bus galima ${day} dienas`);

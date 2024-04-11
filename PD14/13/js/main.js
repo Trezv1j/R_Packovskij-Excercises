@@ -1,16 +1,15 @@
-// Parašykite programą, kuri randa visus sveikuosius skaičius nuo 1 iki 300, kurie turi tik
-// penkis daliklius.
-
 for (let i = 0; i <= 300; i++) {    
-    let dalikliai = 0;
+    let divisors = 0; // Initialize the count of divisors
     
+    // Loop to find divisors of 'i'
     for (let y = 1; y <= i; y++) {
         if (i % y === 0) {
-            dalikliai++;
+            divisors++; // Increment the count if 'y' is a divisor of 'i'
         }
     }
-
-    if (dalikliai === 5) {
-        console.log(i);
+    
+    // Check if 'i' has exactly 5 divisors
+    if (divisors === 5) {
+        console.log(i); // If yes, print 'i'
     }
 }

@@ -1,12 +1,10 @@
-let A = 40; //voko ilgis
-let B = 20; //voko plotis
+let a = 50;
+let b = 25;
+let c = 35;
+let d = 18;
 
-let C = 30; //atviruko ilgis
-let D = 15; //atviruko plotis
-
-if(C <= A-2 && D <= B){
-    console.log(`it fits`)
-}
-else{
-    console.log(`too big `)
+if (c <= a - 2 && d <= b) {
+    console.log(`telpa`); // If both conditions are true, print "telpa"
+} else {
+    console.log(`ne telpa`); // If any of the conditions is false, print "ne telpa"
 }

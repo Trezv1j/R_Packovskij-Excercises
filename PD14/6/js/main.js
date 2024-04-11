@@ -1,11 +1,9 @@
-// Parašykite programą, kuri simbolių eilutę atspausdina atvirkščiai. Papildoma sąlyga: turi
-// būti panaudota LIFO duomenų struktūra.
+const js = "JavaScript for all"; // The original string
+let lifo = ""; // The reversed string
 
-const zodziai = "JavaScript for all";
-let lifo = "";
-
-for (let i = zodziai.length - 1; i >= 0; i--) {
-  lifo += zodziai[i];
+// Reversing the string using LIFO approach
+for (let i = js.length - 1; i >= 0; i--) {
+  lifo += js[i]; // Appending each character to the reversed string
 }
 
-console.log(lifo);
+console.log(lifo); // Output the reversed string

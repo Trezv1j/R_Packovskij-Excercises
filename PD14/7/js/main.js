@@ -1,20 +1,18 @@
-//? Parašykite programą, kuri išvestų į ekraną visus keliamuosius metus nuo n iki m (imtinai)
-//? remiantis Grigaliaus kalendoriumi. Julijaus kalendoriuje keliamieji metai yra tie, kurie be
-//? liekanos dalijasi iš 4, pavyzdžui 1504, 1500, 1600. Grigaliaus kalendoriuje keliamieji metai
-//? skaičiuojami kaip Julijaus kalendoriuje, tačiau paskutiniai amžiaus metai (dalijasi iš 100 be
-//? liekanos) yra keliamieji tik tada, jei be liekanos dalijasi iš 400, pavyzdžui 1504, 1600.
+let startYear = 1997; // Starting year
+let endYear = 2018; // Ending year
+let yearList = []; // Array to store the list of years
 
-let metai = 1997;
-let naujimetai = 2018;
-let list = [];
-for (let i = metai; i <= naujimetai; i++){
-    list.push(i);
+// Generating the list of years between startYear and endYear
+for (let i = startYear; i <= endYear; i++) {
+    yearList.push(i); // Adding each year to the yearList array
 }
 
-for(let q = 0; q < list.length; q++){
-    let year = list[q];
+// Iterating through the list of years to find leap years
+for (let j = 0; j < yearList.length; j++) {
+    let year = yearList[j];
 
-    if(year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)){
-        console.log(year);
+    // Checking if the year is a leap year
+    if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
+        console.log(year); // Outputting the leap year
     }
 }

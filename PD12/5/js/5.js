@@ -1,7 +1,11 @@
-let zuvys = 5;
-laikotarpis = 3;
-for(i=0; i<laikotarpis; i++){
-    zuvys += 3;
-}
+// Initial number of fish in the aquarium
+let fishCount = 5;
 
-console.log(`Po 3 dienų akvariume gyvens ${zuvys} žuvų.`);
+// Time period in days
+let timePeriod = 3;
+
+// Increasing the number of fish in the aquarium over time
+for (let i = 0; i < timePeriod; i++) {
+    fishCount += 3; // Adding 3 fish each day
+}
+console.log(`Po 3 dienų akvariume gyvens ${fishCount} žuvų.`);

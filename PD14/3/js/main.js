@@ -1,9 +1,7 @@
-//Parašykite for ciklą, kuris suskaičiuoja skaičių nuo 1 iki 100 sumą.
+let sum = 0; // Initialize the variable to store the sum
 
-let sk = 0;
-
-
-for(let i = 0; i <= 100; i++){
-    sk += i;
+for (let i = 0; i <= 100; i++) {
+    sum += i; // Add each number from 0 to 100 to the sum
 }
-console.log(sk)
+
+console.log(sum); // Output the total sum

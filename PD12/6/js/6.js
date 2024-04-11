@@ -1,9 +1,16 @@
-let egle = [167, 134 ,145, 156, 155, 176];
-let atsakymas = 0;
+// Heights of spruce trees in centimeters
+let spruceHeights = [167, 134, 145, 156, 155, 176];
 
-for(let i = 0; i< egle.length; i++){
-    atsakymas += egle[i];
+// Variable to store the sum of all heights
+let sum = 0;
+
+// Calculating the sum of all heights
+for (let i = 0; i < spruceHeights.length; i++) {
+  sum += spruceHeights[i]; // Adding each height to the sum
 }
-let vidurkis = atsakymas / egle.length;
 
-console.log(`Eglutės aukščio vidurkis: ${vidurkis} cm`)
+// Calculating the average height
+let averageHeight = sum / spruceHeights.length;
+
+// Displaying the average height
+console.log(`Eglutės aukščio vidurkis: ${averageHeight} cm`);

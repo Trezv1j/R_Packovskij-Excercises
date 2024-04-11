@@ -1,19 +1,19 @@
-let numberType = 17;
-let bigIntType = 17n;
-let stringType = 'Strings are cool'
-let booleanType = true;
-let undefinedType;
-let nullType = {};
-nullType = null;
-let objectType = {};
+let numberr = 1;
+let bigInt = 1n;
+let string = 'string'
+let boolean = false;
+let undefined;
+let null1 = {};
+null1 = null;
+let object = {};
 
-console.log(typeof numberType);
-console.log(typeof bigIntType);
-console.log(typeof stringType);
-console.log(typeof booleanType);
-console.log(typeof undefinedType);
-console.log(typeof nullType);
-console.log(typeof objectType);
+console.log(typeof numberr);
+console.log(typeof bigInt);
+console.log(typeof string);
+console.log(typeof boolean);
+console.log(typeof undefined);
+console.log(typeof null1);
+console.log(typeof object);
 
 let number = 12;
 let otherNumber = 45.89;
